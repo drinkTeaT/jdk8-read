@@ -2,3 +2,4 @@
 
 常用方法:
     sort(List) : 对list进行排序，调用Arrays.sort进行排序
+    binarySearch(list,key)：找元素在列表中的位置。先进行是否实现RandomAccess接口判断，进行遍历迭代优化。一定得事先排序好。
