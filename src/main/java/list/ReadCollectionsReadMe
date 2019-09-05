@@ -1,0 +1,4 @@
+类：java.util.Collections;
+
+常用方法:
+    sort(List) : 对list进行排序，调用Arrays.sort进行排序
