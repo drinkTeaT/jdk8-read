@@ -6,4 +6,7 @@ package list;
  * Date: 2019-09-05 22:46
  **/
 public class ReadArrayList {
+    public static void main(String[] args) {
+
+    }
 }
