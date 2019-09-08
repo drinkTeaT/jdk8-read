@@ -19,4 +19,5 @@ public class ReadArrays {
             Arrays.stream(nums).forEach(x -> System.out.print(x + " "));
         }
     }
+
 }

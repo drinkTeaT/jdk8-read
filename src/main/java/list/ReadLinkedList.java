@@ -2,22 +2,21 @@ package list;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 /**
- * Description: 读ArrayList的源码
+ * Description: null
  * Author: tacbin
- * Date: 2019-09-05 22:46
+ * Date: 2019-09-08 8:24
  **/
-public class ReadArrayList {
+public class ReadLinkedList {
     public static void main(String[] args) {
-        Sort.sortAlgorithm();
-        Find.findAlogrithm();
+
     }
 
     private static class Sort {
-        final static List<Integer> numsList = new ArrayList<>();
+        static List<Integer> numsList = new LinkedList<>();
 
         static {
             numsList.add(12);
@@ -27,7 +26,8 @@ public class ReadArrayList {
         }
 
         /**
-         * 使用归并排序或tim排序
+         * LinkedList自身没有实现排序，通过List的默认方法实现的。
+         * 列表转数组，再调用Arrays.sort
          */
         static void sortAlgorithm() {
             numsList.sort(Integer::compareTo);
@@ -36,7 +36,6 @@ public class ReadArrayList {
 
     private static class Find {
         static void findAlogrithm() {
-
         }
     }
 }
