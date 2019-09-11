@@ -13,12 +13,12 @@ import org.springframework.context.annotation.Configuration;
  **/
 @Configuration
 public class BeanConfiguration {
-    @Bean
+    @Bean("benz")
     public Car createBenz() {
         return new BigCar("benz", 30000);
     }
 
-    @Bean
+    @Bean("kupi")
     public Car createKupi() {
         return new MiniCar("kupi", 25000);
     }

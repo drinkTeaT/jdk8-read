@@ -1,5 +1,7 @@
 package coderead.spring.bean.smallclasses;
 
+import org.springframework.stereotype.Component;
+
 /**
  * Description: null
  * Author: tacbin
