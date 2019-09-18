@@ -1,6 +1,5 @@
 package spring.applicationcontext;
 
-import org.springframework.boot.web.servlet.context.XmlServletWebServerApplicationContext;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import spring.loadbean.Car;

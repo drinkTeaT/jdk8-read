@@ -7,6 +7,8 @@ import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.core.io.support.ResourcePatternResolver;
 
+import java.io.File;
+
 /**
  * Description: null
  * Author: tacbin
@@ -21,6 +23,7 @@ public class ReadBeanFactory {
     private static class BeanInstanceLife {
         /*** DefaultListableBeanFactory是beanfactory默认的bean工厂 */
         static void life() {
+            System.out.println(new File("fakebean").exists());
             ResourcePatternResolver resourcePatternResolver = new PathMatchingResourcePatternResolver();
             Resource resource = resourcePatternResolver.getResource("classpath:fakebean");
             DefaultListableBeanFactory factory = new DefaultListableBeanFactory();

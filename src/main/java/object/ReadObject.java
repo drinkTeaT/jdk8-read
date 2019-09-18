@@ -35,17 +35,14 @@ public class ReadObject {
 
         /*** 唤醒线程 */
         static void objNotify() {
-            Thread thread = new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    synchronized (greet) {
-                        try {
-                            Thread.sleep(1000);
-                            greet.notify();
-                            System.out.println("唤醒他了");
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                        }
+            Thread thread = new Thread(() -> {
+                synchronized (greet) {
+                    try {
+                        Thread.sleep(1000);
+                        greet.notify();
+                        System.out.println("唤醒他了");
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
                     }
                 }
             });
