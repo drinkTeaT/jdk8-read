@@ -14,13 +14,16 @@ public class ValueRelatedCalculation {
 
     public static void main(String[] args) {
         ValueRelatedCalculation calculation = new ValueRelatedCalculation();
-        service.submit(calculation.new Task1());
+        Future<Integer> future1 = service.submit(calculation.new Task1());
         Future<Integer> future2 = service.submit(calculation.new Task2());
         try {
+            System.out.println("计算结果：" + future1.get(1,TimeUnit.SECONDS));
             System.out.println("计算结果：" + future2.get());
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (ExecutionException e) {
+            e.printStackTrace();
+        } catch (TimeoutException e) {
             e.printStackTrace();
         }
         service.shutdown();
@@ -34,9 +37,10 @@ public class ValueRelatedCalculation {
         @Override
         public Integer call() throws Exception {
             Thread.sleep(5 * 1000);
-            task1Value = 1;
+            int result = 8;
+            task1Value = result;
             latch1.countDown();
-            return null;
+            return result;
         }
     }
 

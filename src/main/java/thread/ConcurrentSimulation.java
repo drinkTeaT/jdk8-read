@@ -37,6 +37,7 @@ public class ConcurrentSimulation {
                 barrier.await();
                 System.out.println(count.addAndGet(1));
             } catch (InterruptedException e) {
+
                 e.printStackTrace();
             } catch (BrokenBarrierException e) {
                 e.printStackTrace();
