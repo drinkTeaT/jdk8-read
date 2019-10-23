@@ -1,13 +1,13 @@
 package coderead.spring.bean.smallclasses;
 
-import org.springframework.stereotype.Component;
+import coderead.spring.myannotation.TimeCount;
 
 /**
  * Description: null
  * Author: tacbin
  * Date: 2019-09-09 18:22
  **/
-@Component
+
 public class BigCar implements Car {
     private String name;
     private int price;
@@ -20,6 +20,7 @@ public class BigCar implements Car {
         this.price = price;
     }
 
+    @TimeCount
     @Override
     public void printInfo() {
         System.out.println("name : " + name + " price: " + price + "$");

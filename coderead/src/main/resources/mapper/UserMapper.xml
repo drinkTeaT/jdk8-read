@@ -4,6 +4,8 @@
 
     <select id="getUsers" resultType="User">
         SELECT * FROM tbl_user
+
     </select>
+
 
 </mapper>

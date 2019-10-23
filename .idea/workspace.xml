@@ -2,27 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b6b1bcb-2a7b-472a-98c9-5d391baa2fcb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jdk8-read.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/controller/MyBatisController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/mybaits/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/mybaits/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/mybaits/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coderead/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/tread/ConcurrentSimulation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/tread/ExecuteInOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/map/ReadHashMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/myannotation/TimeCount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/myannotation/TimeCountAspectJ.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/mybaits/intercepts/MyExecutors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/mybaits/mybatis集成springboot介绍" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coderead/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coderead/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coderead/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coderead/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/CodereadApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/CodereadApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coderead/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/coderead/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coderead/src/test/java/coderead/spring/CodereadApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coderead/src/test/java/coderead/spring/ResoruceTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/thread/ConcurrentSimulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/thread/ConcurrentSimulation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/thread/calculation/ValueRelatedCalculation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/thread/calculation/ValueRelatedCalculation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/bean/smallclasses/BigCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/bean/smallclasses/BigCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/bean/smallclasses/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/bean/smallclasses/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/bean/smallclasses/MiniCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/bean/smallclasses/MiniCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/mybaits/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/mybaits/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/mybaits/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/mybaits/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/mybaits/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/mybaits/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coderead/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coderead/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,10 +66,14 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="jdk8-read" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -98,6 +95,7 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -112,7 +110,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Debugger" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -149,12 +147,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReadApplicationContext" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="spring.applicationcontext.ReadApplicationContext" />
-      <module name="jdk8-read" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lombok.launch.Main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="spring.applicationcontext.*" />
+          <option name="PATTERN" value="lombok.launch.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -209,20 +206,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ReadApplicationContext" />
       <item itemvalue="Application.ConcurrentSimulation" />
       <item itemvalue="Application.TimSortQuickSortComparator" />
       <item itemvalue="Application.ReadHashMap" />
       <item itemvalue="Application.ValueRelatedCalculation" />
+      <item itemvalue="Application.Main" />
       <item itemvalue="Spring Boot.CodereadApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.ConcurrentSimulation" />
         <item itemvalue="Application.ReadHashMap" />
         <item itemvalue="Application.ValueRelatedCalculation" />
         <item itemvalue="Application.TimSortQuickSortComparator" />
-        <item itemvalue="Application.ReadApplicationContext" />
       </list>
     </recent_temporary>
   </component>
@@ -255,6 +252,9 @@
         </treeState>
       </serviceView>
     </option>
+  </component>
+  <component name="SpringBeansView">
+    <option name="beanDetailsProportion" value="0.3" />
   </component>
   <component name="StructureViewFactory">
     <option name="ACTIVE_ACTIONS" value=",VISIBILITY_SORTER,SHOW_ANONYMOUS,SHOW_LAMBDA,SHOW_PROPERTIES,SHOW_INTERFACES" />
@@ -292,6 +292,14 @@
       <workItem from="1571225618825" duration="556000" />
       <workItem from="1571273572526" duration="1000000" />
       <workItem from="1571314758708" duration="6722000" />
+      <workItem from="1571359101007" duration="2616000" />
+      <workItem from="1571376750299" duration="800000" />
+      <workItem from="1571405851719" duration="1804000" />
+      <workItem from="1571407874067" duration="4922000" />
+      <workItem from="1571560494287" duration="8866000" />
+      <workItem from="1571660143226" duration="8945000" />
+      <workItem from="1571744816504" duration="3332000" />
+      <workItem from="1571837492467" duration="6454000" />
     </task>
     <task id="LOCAL-00001" summary="新建项目">
       <created>1567674063252</created>
@@ -335,7 +343,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568274718086</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="mybatis可以用了">
+      <created>1571359176722</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1571359176722</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -360,20 +375,36 @@
     <MESSAGE value="添加排序算法" />
     <MESSAGE value="添加spring源码阅读的内容" />
     <MESSAGE value="并发模拟器" />
-    <option name="LAST_COMMIT_MESSAGE" value="并发模拟器" />
+    <MESSAGE value="mybatis可以用了" />
+    <option name="LAST_COMMIT_MESSAGE" value="mybatis可以用了" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.9.RELEASE/spring-context-5.1.9.RELEASE-sources.jar!/org/springframework/context/annotation/AnnotatedBeanDefinitionReader.java</url>
-          <line>133</line>
-          <option name="timeStamp" value="36" />
+          <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/plugin/Plugin.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://D:/software/jdk/src.zip!/java/util/HashMap.java</url>
-          <line>525</line>
-          <option name="timeStamp" value="40" />
+          <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/builder/xml/XMLConfigBuilder.java</url>
+          <line>179</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/coderead/src/main/java/coderead/spring/myannotation/TimeCountAspectJ.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/coderead/src/main/java/coderead/spring/controller/SimpleWebController.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/coderead/src/main/java/coderead/spring/bean/smallclasses/MiniCar.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="50" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

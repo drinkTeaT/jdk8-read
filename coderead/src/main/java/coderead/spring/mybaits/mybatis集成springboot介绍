@@ -1,0 +1,3 @@
+1   mybatis配置文件 指定mapper配置文件和实体所在的包
+2   mapper配置文件：namespace = mapper接口全名，id = 一个接口方法的和resultType=实体类名，以及定义动态sql
+3   配置信息生成configuration对象，再创建SqlSessionFactory对象，再创建SqlSession对象返回结果集。

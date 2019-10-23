@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
  * Author: tacbin
  * Date: 2019-09-09 18:21
  **/
+@Component
 public interface Car {
     void printInfo();
 }
