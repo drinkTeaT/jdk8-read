@@ -15,9 +15,9 @@ import org.springframework.stereotype.Component;
 public class TimeCountAspectJ {
     @Around("@annotation(TimeCount)")
     public Object count(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
-        long start = System.nanoTime();
+        long start = System.currentTimeMillis();
         Object obj = proceedingJoinPoint.proceed();
-        System.out.println("execution time : " + (System.nanoTime() - start));
+        System.out.println("execution time : " + (System.currentTimeMillis() - start));
         return  obj;
     }
 }
