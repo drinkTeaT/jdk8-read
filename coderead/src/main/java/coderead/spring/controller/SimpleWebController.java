@@ -18,7 +18,8 @@ public class SimpleWebController {
     Car car;
 
     @RequestMapping("/hi")
-    public void responseQuest() {
+    public String responseQuest() {
         car.printInfo();
+        return car.toString();
     }
 }

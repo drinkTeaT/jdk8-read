@@ -27,14 +27,9 @@ interface IHello {
 }
 
 class Hello implements IHello {
-    @NoticeBeforeOperation
+//    @NoticeBeforeOperation
     public void sayHi() {
         System.out.println("hello world!");
-        try {
-            Thread.sleep(12);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
     }
 
 //    @NoticeBeforeOperation

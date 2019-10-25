@@ -1,0 +1,3 @@
+collection用于类中的集合查询；
+ <collection property="payAccounts" javaType="ArrayList" ofType="coderead.spring.mybaits.entity.PayAccount">
+association用于类中类的查询；

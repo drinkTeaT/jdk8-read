@@ -20,7 +20,7 @@ public class MyExecutors implements Interceptor {
     @Override
     public Object intercept(Invocation invocation) throws Throwable {
         Object obj = invocation.proceed();
-        System.out.println(obj.toString());
+        System.out.println("拦截器：" + obj.toString());
         return obj;
     }
 
