@@ -20,4 +20,9 @@
         SELECT * FROM tbl_user as u
         inner join pay_account as p on u.user_id = p.userid where u.user_id=#{id}
     </select>
+
+    <insert id="insertUser" flushCache="true" parameterType="coderead.spring.mybaits.entity.User" statementType="PREPARED" timeout="20"
+            useGeneratedKeys="true" keyProperty="user_id">
+            insert into tbl_user (user_name,user_age) values (#{userName},#{userAge})
+    </insert>
 </mapper>
