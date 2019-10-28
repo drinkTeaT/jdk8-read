@@ -2,19 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b6b1bcb-2a7b-472a-98c9-5d391baa2fcb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/mybaits/entity/PayAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coderead/src/main/resources/mapper/collection和association区别" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coderead/src/main/resources/sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/mybaits/intercepts/PageIntercepts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/mybaits/pro/mapper/IMyMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/mybaits/service/MyService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/bean/smallclasses/BigCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/bean/smallclasses/BigCar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/controller/SimpleWebController.java" beforeDir="false" afterPath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/controller/SimpleWebController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coderead/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coderead/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/controller/MyBatisController.java" beforeDir="false" afterPath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/controller/MyBatisController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/mybaits/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/mybaits/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/mybaits/intercepts/MyExecutors.java" beforeDir="false" afterPath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/mybaits/intercepts/MyExecutors.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coderead/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coderead/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/ProxyLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/ProxyLauncher.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -298,7 +293,7 @@
       <workItem from="1571660143226" duration="8945000" />
       <workItem from="1571744816504" duration="3332000" />
       <workItem from="1571837492467" duration="6454000" />
-      <workItem from="1571886031869" duration="27354000" />
+      <workItem from="1571886031869" duration="39647000" />
     </task>
     <task id="LOCAL-00001" summary="新建项目">
       <created>1567674063252</created>
@@ -356,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571902274544</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="动态sql的collection与association">
+      <created>1571994605735</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1571994605735</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -383,16 +385,12 @@
     <MESSAGE value="并发模拟器" />
     <MESSAGE value="mybatis可以用了" />
     <MESSAGE value="硬实现方法注解" />
-    <option name="LAST_COMMIT_MESSAGE" value="硬实现方法注解" />
+    <MESSAGE value="动态sql的collection与association" />
+    <option name="LAST_COMMIT_MESSAGE" value="动态sql的collection与association" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/plugin/Plugin.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/builder/xml/XMLConfigBuilder.java</url>
           <line>179</line>
@@ -407,6 +405,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/annotation/DynamicProxyFactory.java</url>
           <line>14</line>
           <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/coderead/src/main/java/coderead/spring/mybaits/service/MyService.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="56" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
