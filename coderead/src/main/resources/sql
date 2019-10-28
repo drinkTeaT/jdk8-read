@@ -5,3 +5,14 @@ CREATE TABLE tbl_user
 	user_age INT(11) NULL DEFAULT NULL COMMENT '年龄',
 	PRIMARY KEY (user_id)
 ) charset = utf8;
+
+CREATE TABLE pay_account
+(
+	id BIGINT(20) NOT NULL COMMENT '主键ID',
+	money DECIMAL(19,6) NULL DEFAULT 0.0,
+	country VARCHAR(30) NULL DEFAULT NULL,
+	account VARCHAR(30) NULL DEFAULT NULL,
+	password VARCHAR(30) NULL DEFAULT NULL,
+	userid BIGINT(20) NOT NULL,
+	PRIMARY KEY (id)
+) charset = utf8;
