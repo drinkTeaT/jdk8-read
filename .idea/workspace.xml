@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b6b1bcb-2a7b-472a-98c9-5d391baa2fcb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/mybaits/intercepts/PageIntercepts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/mybaits/pro/mapper/IMyMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/mybaits/service/MyService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coderead/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coderead/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/controller/MyBatisController.java" beforeDir="false" afterPath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/controller/MyBatisController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/mybaits/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/mybaits/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coderead/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/coderead/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coderead/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coderead/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -201,10 +196,10 @@
     <list>
       <item itemvalue="Application.ConcurrentSimulation" />
       <item itemvalue="Application.Main" />
-      <item itemvalue="Spring Boot.CodereadApplication" />
       <item itemvalue="Application.TimeCountLaunch" />
       <item itemvalue="Application.ProxyLauncher" />
       <item itemvalue="Application.ReadBeanFactory" />
+      <item itemvalue="Spring Boot.CodereadApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -294,6 +289,7 @@
       <workItem from="1571744816504" duration="3332000" />
       <workItem from="1571837492467" duration="6454000" />
       <workItem from="1571886031869" duration="39647000" />
+      <workItem from="1574084190509" duration="695000" />
     </task>
     <task id="LOCAL-00001" summary="新建项目">
       <created>1567674063252</created>
