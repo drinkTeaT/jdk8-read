@@ -26,7 +26,7 @@ public class MyBatisController {
           user.setUserName("jimmy");
           user.setUserAge(13);
           userService.insertUser(user);
-          userService.insertUser(new User());
+//          userService.insertUser(new User());
         return userService.getUsers();
     }
 
