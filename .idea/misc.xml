@@ -35,6 +35,7 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/coderead/pom.xml" />
+        <option value="$PROJECT_DIR$/starter/pom.xml" />
       </list>
     </option>
   </component>
