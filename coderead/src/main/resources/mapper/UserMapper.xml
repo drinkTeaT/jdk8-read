@@ -6,23 +6,23 @@
         <id property="userId" column="user_id"/>
         <result property="userName" column="user_name"/>
         <result property="userAge" column="user_age"/>
-        <collection property="payAccounts" javaType="ArrayList" ofType="coderead.spring.mybaits.entity.PayAccount">
+        <association property="payAccounts" javaType="coderead.spring.mybaits.entity.PayAccount" >
             <id property="id" column="id"/>
             <result property="money" column="money"/>
             <result property="country" column="country"/>
             <result property="acc" column="account"/>
             <result property="pwd" column="password"/>
             <result property="userId" column="userid"/>
-        </collection>
+        </association>
     </resultMap>
-
     <select id="getUsers" resultMap="userMap">
         SELECT * FROM tbl_user as u
         inner join pay_account as p on u.user_id = p.userid where u.user_id=#{id}
     </select>
 
-    <insert id="insertUser" flushCache="true" parameterType="coderead.spring.mybaits.entity.User" statementType="PREPARED" timeout="20"
+    <insert id="insertUser" flushCache="true" parameterType="coderead.spring.mybaits.entity.User"
+            statementType="PREPARED" timeout="20"
             useGeneratedKeys="true" keyProperty="user_id">
-            insert into tbl_user (user_name,user_age) values (#{userName},#{userAge})
+            insert into tbl_user (user_name,user_age) values (#{userName},#{userAge })
     </insert>
 </mapper>

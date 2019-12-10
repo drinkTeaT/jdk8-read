@@ -21,11 +21,6 @@ public class MyBatisController {
     @GetMapping("/users")
     @Transactional(rollbackForClassName = "Exception.class")
     public List<User> lists() {
-        User user = new User();
-        user.setUserName("jimmy");
-        user.setUserAge(13);
-        userService.insertUser(user);
-//          userService.insertUser(new User());
         return userService.getUsers();
     }
 
@@ -35,13 +30,13 @@ public class MyBatisController {
         return result;
     }
 
-    @RequestMapping("/")
-    public String getStringFromWeb(@RequestParam String userId, @RequestParam String phone) {
+    @PostMapping("/")
+    public String getStringFromWeb(@RequestParam(required = false) String userId, @RequestParam(required = false) String phone) {
         return userId + " " + phone;
     }
 
     @RequestMapping("/entity")
-    public String getEntityFromWeb(@RequestBody Person person){
+    public String getEntityFromWeb(@RequestBody Person person) {
         return person.toString();
     }
 }

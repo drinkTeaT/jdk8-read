@@ -2,6 +2,7 @@ package coderead.spring.bean.smallclasses;
 
 import coderead.spring.myannotation.TimeCount;
 import lombok.ToString;
+import org.springframework.stereotype.Component;
 
 /**
  * Description: null
@@ -9,6 +10,7 @@ import lombok.ToString;
  * Date: 2019-09-09 18:22
  **/
 @ToString
+@Component("bigCar")
 public class BigCar implements Car {
     private String name;
     private int price;

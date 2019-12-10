@@ -8,11 +8,12 @@ import org.springframework.stereotype.Component;
  * Author liuweibin
  * Date 2019/11/27 17:32
  **/
-@Component
+@Component("b")
 public class B {
     @Autowired
     A a;
 
-    public B(){
+    public B() {
+        System.out.println("B 实例化");
     }
 }
