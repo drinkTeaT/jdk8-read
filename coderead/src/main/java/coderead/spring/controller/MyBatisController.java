@@ -1,8 +1,10 @@
 package coderead.spring.controller;
 
 import coderead.spring.entity.Person;
+import coderead.spring.mybaits.entity.PayAccount;
 import coderead.spring.mybaits.entity.User;
 import coderead.spring.mybaits.service.MyService;
+import coderead.spring.mybaits.service.PayAccountService;
 import coderead.spring.mybaits.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
@@ -14,6 +16,8 @@ import java.util.List;
 public class MyBatisController {
     @Autowired
     private UserService userService;
+    @Autowired
+    private PayAccountService payAccountService;
 
     @Autowired
     MyService service;
@@ -38,5 +42,10 @@ public class MyBatisController {
     @RequestMapping("/entity")
     public String getEntityFromWeb(@RequestBody Person person) {
         return person.toString();
+    }
+
+    @RequestMapping("/pay")
+    public PayAccount getPayAccountInfo(long id) {
+        return payAccountService.getPayAccountBlog(id);
     }
 }
