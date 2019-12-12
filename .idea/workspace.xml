@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b6b1bcb-2a7b-472a-98c9-5d391baa2fcb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/controller/ShiroController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/shiro/MyRealm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/shiro/ShiroConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/config/shiro.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coderead/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coderead/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/controller/MyBatisController.java" beforeDir="false" afterPath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/controller/MyBatisController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -326,7 +321,7 @@
       <workItem from="1576133332661" duration="271000" />
       <workItem from="1576141280395" duration="2671000" />
       <workItem from="1576144132218" duration="426000" />
-      <workItem from="1576144705332" duration="260000" />
+      <workItem from="1576144705332" duration="6809000" />
     </task>
     <task id="LOCAL-00001" summary="新建项目">
       <created>1567674063252</created>
@@ -412,7 +407,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575966012158</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="添加shiro配置">
+      <created>1576145185760</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1576145185760</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -453,7 +455,8 @@
     <MESSAGE value="controller参数" />
     <MESSAGE value="改了很多" />
     <MESSAGE value="实践了一个动态sql" />
-    <option name="LAST_COMMIT_MESSAGE" value="实践了一个动态sql" />
+    <MESSAGE value="添加shiro配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加shiro配置" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -469,9 +472,19 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-web/1.4.2/shiro-web-1.4.2-sources.jar!/org/apache/shiro/web/servlet/OncePerRequestFilter.java</url>
-          <line>108</line>
-          <option name="timeStamp" value="5" />
+          <url>file://$PROJECT_DIR$/coderead/src/main/java/coderead/spring/shiro/MyRealm.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/coderead/src/main/java/coderead/spring/shiro/MyRealm.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/coderead/src/main/java/coderead/spring/controller/MyBatisController.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

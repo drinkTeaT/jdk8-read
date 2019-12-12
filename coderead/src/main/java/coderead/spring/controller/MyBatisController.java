@@ -6,6 +6,8 @@ import coderead.spring.mybaits.entity.User;
 import coderead.spring.mybaits.service.MyService;
 import coderead.spring.mybaits.service.PayAccountService;
 import coderead.spring.mybaits.service.UserService;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
@@ -30,6 +32,7 @@ public class MyBatisController {
 
     @RequestMapping("/page")
     public List<User> queryPage() {
+        authorTest();
         List<User> result = service.queryUser(1, 2);
         return result;
     }
@@ -47,5 +50,11 @@ public class MyBatisController {
     @RequestMapping("/pay")
     public PayAccount getPayAccountInfo(long id) {
         return payAccountService.getPayAccountBlog(id);
+    }
+
+
+    private void authorTest() {
+        Subject subject = SecurityUtils.getSubject();
+        subject.hasRole("root");
     }
 }
