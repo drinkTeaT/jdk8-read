@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b6b1bcb-2a7b-472a-98c9-5d391baa2fcb" name="Default Changelist" comment="starter">
-      <change afterPath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/entity/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="6b6b1bcb-2a7b-472a-98c9-5d391baa2fcb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/controller/ShiroController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/shiro/MyRealm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/shiro/ShiroConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/config/shiro.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/controller/MyBatisController.java" beforeDir="false" afterPath="$PROJECT_DIR$/coderead/src/main/java/coderead/spring/controller/MyBatisController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coderead/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coderead/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +18,9 @@
   </component>
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -59,6 +63,8 @@
       <list>
         <option value="HTML File" />
         <option value="AnnotationType" />
+        <option value="FxmlFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -101,13 +107,17 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\jdk8-read\coderead\src\main\resources\mapper" />
       <recent name="E:\workspace\Idea\git\jdk8-read\src\main\java\baseknowledge\sort" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\jdk8-read\src\main\config" />
+      <recent name="F:\jdk8-read\src\main" />
+      <recent name="F:\jdk8-read\WEB-INF" />
       <recent name="E:\workspace\Idea\git\jdk8-read" />
       <recent name="E:\workspace\Idea\git\jdk8-read\src\main\java\spring\loadbean" />
     </key>
@@ -125,31 +135,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.CodereadApplication">
-    <configuration name="ConcurrentSimulation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.ConcurrentSimulation" />
-      <module name="jdk8-read" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="thread.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lombok.launch.Main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lombok.launch.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ProxyLauncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="annotation.ProxyLauncher" />
       <module name="jdk8-read" />
@@ -176,6 +161,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ShiroTutorial" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="shiro.ShiroTutorial" />
+      <module name="jdk8-read" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="shiro.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TempTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TempTest" />
+      <module name="jdk8-read" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TimeCountLaunch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="annotation.TimeCountLaunch" />
       <module name="jdk8-read" />
@@ -197,20 +202,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ConcurrentSimulation" />
-      <item itemvalue="Application.Main" />
       <item itemvalue="Application.TimeCountLaunch" />
       <item itemvalue="Application.ProxyLauncher" />
       <item itemvalue="Application.ReadBeanFactory" />
+      <item itemvalue="Application.TempTest" />
+      <item itemvalue="Application.ShiroTutorial" />
       <item itemvalue="Spring Boot.CodereadApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ShiroTutorial" />
+        <item itemvalue="Application.TempTest" />
         <item itemvalue="Application.ProxyLauncher" />
         <item itemvalue="Application.ReadBeanFactory" />
         <item itemvalue="Application.TimeCountLaunch" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.ConcurrentSimulation" />
       </list>
     </recent_temporary>
   </component>
@@ -292,7 +297,36 @@
       <workItem from="1571744816504" duration="3332000" />
       <workItem from="1571837492467" duration="6454000" />
       <workItem from="1571886031869" duration="39647000" />
-      <workItem from="1575280241457" duration="979000" />
+      <workItem from="1575280241457" duration="1093000" />
+      <workItem from="1575281509795" duration="1295000" />
+      <workItem from="1575340293112" duration="441000" />
+      <workItem from="1575340822255" duration="121000" />
+      <workItem from="1575359732030" duration="14447000" />
+      <workItem from="1575455586134" duration="6757000" />
+      <workItem from="1575517167286" duration="96000" />
+      <workItem from="1575881372317" duration="5518000" />
+      <workItem from="1575946588371" duration="728000" />
+      <workItem from="1575947420536" duration="2596000" />
+      <workItem from="1575950129393" duration="4314000" />
+      <workItem from="1575962524584" duration="213000" />
+      <workItem from="1575962761053" duration="3915000" />
+      <workItem from="1575966796294" duration="1668000" />
+      <workItem from="1575968552097" duration="836000" />
+      <workItem from="1576029992918" duration="2954000" />
+      <workItem from="1576035642785" duration="238000" />
+      <workItem from="1576047096158" duration="1012000" />
+      <workItem from="1576048476739" duration="1672000" />
+      <workItem from="1576054060556" duration="331000" />
+      <workItem from="1576054825114" duration="293000" />
+      <workItem from="1576059592209" duration="26000" />
+      <workItem from="1576116803900" duration="2437000" />
+      <workItem from="1576120269033" duration="1562000" />
+      <workItem from="1576121972062" duration="738000" />
+      <workItem from="1576122815587" duration="344000" />
+      <workItem from="1576133332661" duration="271000" />
+      <workItem from="1576141280395" duration="2671000" />
+      <workItem from="1576144132218" duration="426000" />
+      <workItem from="1576144705332" duration="260000" />
     </task>
     <task id="LOCAL-00001" summary="新建项目">
       <created>1567674063252</created>
@@ -357,7 +391,28 @@
       <option name="project" value="LOCAL" />
       <updated>1571994605735</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="controller参数">
+      <created>1575281254106</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1575281254106</updated>
+    </task>
+    <task id="LOCAL-00011" summary="改了很多">
+      <created>1575961984038</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1575961984038</updated>
+    </task>
+    <task id="LOCAL-00012" summary="实践了一个动态sql">
+      <created>1575966012158</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1575966012158</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -395,30 +450,28 @@
     <MESSAGE value="mybatis可以用了" />
     <MESSAGE value="硬实现方法注解" />
     <MESSAGE value="动态sql的collection与association" />
-    <option name="LAST_COMMIT_MESSAGE" value="动态sql的collection与association" />
+    <MESSAGE value="controller参数" />
+    <MESSAGE value="改了很多" />
+    <MESSAGE value="实践了一个动态sql" />
+    <option name="LAST_COMMIT_MESSAGE" value="实践了一个动态sql" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/builder/xml/XMLConfigBuilder.java</url>
-          <line>179</line>
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/coderead/src/main/java/coderead/spring/bean/smallclasses/MiniCar.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="50" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/annotation/DynamicProxyFactory.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="53" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/coderead/src/main/java/coderead/spring/mybaits/service/MyService.java</url>
+          <url>file://$PROJECT_DIR$/coderead/src/main/java/coderead/spring/controller/ShiroController.java</url>
           <line>24</line>
-          <option name="timeStamp" value="56" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/coderead/src/main/java/coderead/spring/controller/ShiroController.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-web/1.4.2/shiro-web-1.4.2-sources.jar!/org/apache/shiro/web/servlet/OncePerRequestFilter.java</url>
+          <line>108</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

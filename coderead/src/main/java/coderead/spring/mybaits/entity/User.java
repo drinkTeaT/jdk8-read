@@ -15,6 +15,6 @@ public class User {
     private String userName;
     @TableField("user_age")
     private Integer userAge;
-    @TableField("exist = false")
+    @TableField(exist = false)
     private PayAccount payAccounts;
 }
