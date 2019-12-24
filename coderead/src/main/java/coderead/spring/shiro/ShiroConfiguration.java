@@ -23,7 +23,7 @@ public class ShiroConfiguration {
 
     @Bean
     public Realm realm() {
-        ////sfdfdfdfdfdfdfdfdfd
+        ////测试/测试/测试/测试/测试/测试/测试/测试/测试/测试/测试/测试
         return new MyRealm();
     }
 
