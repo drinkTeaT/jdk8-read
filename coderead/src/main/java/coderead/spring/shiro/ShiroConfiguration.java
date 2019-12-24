@@ -1,6 +1,5 @@
 package coderead.spring.shiro;
 
-import org.apache.shiro.mgt.DefaultSecurityManager;
 import org.apache.shiro.realm.Realm;
 import org.apache.shiro.spring.LifecycleBeanPostProcessor;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
@@ -24,26 +23,28 @@ public class ShiroConfiguration {
 
     @Bean
     public Realm realm() {
+        ////sfdfdfdfdfdfdfdfdfd
         return new MyRealm();
     }
 
     @Bean
-    public DefaultWebSecurityManager defaultSecurityManager(Realm myRealm) {
+    public DefaultWebSecurityManager defaultSecurityManager(Realm myRealm, ShiroFilterFactoryBean filterFactoryBean) {
         DefaultWebSecurityManager securityManager = new DefaultWebSecurityManager();
         securityManager.setRealm(myRealm);
+        filterFactoryBean.setSecurityManager(securityManager);
         return securityManager;
     }
 
     @Bean
-    public LifecycleBeanPostProcessor lifecycleBeanPostProcessor() {
+    public static LifecycleBeanPostProcessor lifecycleBeanPostProcessor() {
         LifecycleBeanPostProcessor lifecycleBeanPostProcessor = new LifecycleBeanPostProcessor();
         return lifecycleBeanPostProcessor;
     }
 
     @Bean
-    public MethodInvokingFactoryBean methodInvokingFactoryBean(DefaultSecurityManager securityManager) {
+    public MethodInvokingFactoryBean methodInvokingFactoryBean(DefaultWebSecurityManager defaultWebSecurityManager) {
         MethodInvokingFactoryBean methodInvokingFactoryBean = new MethodInvokingFactoryBean();
-        methodInvokingFactoryBean.setArguments(securityManager);
+        methodInvokingFactoryBean.setArguments(defaultWebSecurityManager);
         methodInvokingFactoryBean.setStaticMethod("org.apache.shiro.SecurityUtils.setSecurityManager");
         return methodInvokingFactoryBean;
     }
@@ -61,10 +62,9 @@ public class ShiroConfiguration {
     }
 
     @Bean
-    public ShiroFilterFactoryBean shiroFilterFactoryBean(DefaultWebSecurityManager securityManager, ShiroFilterChainDefinition chainDefinition) {
+    public static ShiroFilterFactoryBean shiroFilterFactoryBean() {
         ShiroFilterFactoryBean filterFactoryBean = new ShiroFilterFactoryBean();
-        filterFactoryBean.setFilterChainDefinitionMap(chainDefinition.getFilterChainMap());
-        filterFactoryBean.setSecurityManager(securityManager);
+        filterFactoryBean.setSecurityManager(new DefaultWebSecurityManager());
         return filterFactoryBean;
     }
 }
