@@ -2,7 +2,6 @@ package baseknowledge.sort;
 
 import java.util.Arrays;
 import java.util.Random;
-import java.util.stream.Collectors;
 
 /**
  * description：tim排序和快排速度测试
@@ -11,7 +10,7 @@ import java.util.stream.Collectors;
  **/
 public class TimSortQuickSortComparator {
     public static void main(String[] args) {
-        int count = 1000;
+        int count = 10000;
         int[] source = ComparatorUtil.arrayGenerator(count);
         long start = System.nanoTime();
         Arrays.sort(source);
